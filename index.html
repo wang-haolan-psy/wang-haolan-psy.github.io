@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haolan Wang (王淏蘭)</title>
+<meta name="description" content="Haolan Wang — Ph.D. candidate in Educational and School Psychology at Beijing Normal University. Research on children's reading, multiple-text comprehension, and source evaluation.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%231f4e79'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia,serif'>W</text></svg>">
+<style>
+  :root {
+    --ink: #1c2733;
+    --muted: #5b6b7a;
+    --accent: #1f4e79;
+    --accent-light: #3a74a8;
+    --line: #dfe6ec;
+    --bg: #fbfcfd;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 800px; margin: 0 auto; padding: 56px 24px 80px; }
+
+  /* ---------- header ---------- */
+  header { display: flex; gap: 32px; align-items: flex-start; }
+  header .text { flex: 1 1 auto; }
+  h1 {
+    font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+    font-size: 2.1rem;
+    margin: 0 0 2px 0;
+    letter-spacing: .3px;
+  }
+  h1 .cn { font-size: 1.35rem; color: var(--muted); font-weight: normal; margin-left: 6px; }
+  .role { color: var(--accent); font-size: 1.02rem; margin: 6px 0 14px; }
+  .contact { font-size: .93rem; color: var(--muted); }
+  .contact span { white-space: nowrap; margin-right: 18px; display: inline-block; }
+  .photo {
+    flex: 0 0 168px;
+    width: 168px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(28, 39, 51, .14);
+    border: 1px solid var(--line);
+  }
+  a { color: var(--accent-light); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ---------- sections ---------- */
+  section { margin-top: 52px; }
+  h2 {
+    font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+    font-size: 1.28rem;
+    color: var(--accent);
+    margin: 0 0 18px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--line);
+  }
+  p { margin: 0 0 14px; }
+
+  ul.interests { margin: 0; padding-left: 22px; }
+  ul.interests li { margin-bottom: 10px; }
+
+  ul.edu { list-style: none; margin: 0; padding: 0; }
+  ul.edu li { margin-bottom: 16px; padding-left: 18px; position: relative; }
+  ul.edu li::before {
+    content: "";
+    position: absolute; left: 0; top: 10px;
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--accent-light);
+  }
+  .deg { font-weight: 600; }
+  .when { color: var(--muted); font-size: .92rem; white-space: nowrap; }
+  .note { color: var(--muted); font-size: .92rem; }
+
+  ul.pubs { list-style: none; margin: 0 0 8px; padding: 0; }
+  ul.pubs li {
+    margin-bottom: 16px;
+    padding: 14px 16px 12px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    /* hanging-punct friendly hanging indent */
+    text-indent: 0;
+  }
+  ul.pubs li p { margin: 0; }
+  .paper-title { font-weight: 600; color: var(--ink); }
+  .journal { font-style: italic; }
+  .doi {
+    font-size: .85rem;
+    margin-left: 6px;
+    white-space: nowrap;
+  }
+  .fa-mark { color: var(--accent-light); font-weight: 700; }
+  .pub-note { color: var(--muted); font-size: .93rem; }
+
+  ul.honors { list-style: none; margin: 0; padding: 0; }
+  ul.honors li { margin-bottom: 12px; padding-left: 18px; position: relative; }
+  ul.honors li::before {
+    content: "★";
+    position: absolute; left: 0; top: 0;
+    color: #c9a227; font-size: .8rem; line-height: 1.9;
+  }
+  .honor-note { color: var(--muted); font-size: .92rem; }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .88rem;
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    .wrap { padding-top: 36px; }
+    header { flex-direction: column-reverse; align-items: center; text-align: center; }
+    header .text { flex: none; width: 100%; }
+    .photo { flex: none; margin-bottom: 4px; }
+    h1 { font-size: 1.7rem; }
+    h1 .cn { display: block; margin: 4px 0 0; }
+    .contact span { display: block; margin: 2px 0; }
+  }
+  @media print {
+    body { background: #fff; }
+    .wrap { max-width: none; padding: 0; }
+    ul.pubs li { border: none; padding: 0 0 0 0; }
+    .photo { max-width: 120px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="text">
+      <h1>Haolan Wang<span class="cn">王淏蘭</span></h1>
+      <div class="role">Ph.D. Candidate in Educational and School Psychology<br>Beijing Normal University</div>
+      <div class="contact">
+        <span>✉ <a href="mailto:helenawang_psy@mail.bnu.edu.cn">helenawang_psy@mail.bnu.edu.cn</a></span>
+        <span>🎓 <a href="https://scholar.google.com/citations?user=dkF6H9wAAAAJ" target="_blank" rel="noopener">Google Scholar</a></span>
+      </div>
+    </div>
+    <img class="photo" src="assets/photo.jpg" alt="Portrait of Haolan Wang">
+  </header>
+
+  <section id="bio">
+    <h2>About Me</h2>
+    <p>
+      I am a Ph.D. candidate in Educational and School Psychology at Beijing Normal University (expected July 2027),
+      working with Prof. Xinchun Wu at the Research Center of Children's Reading and Learning.
+      During 2025–2026, I was a China Scholarship Council–funded joint doctoral student at the University of Minnesota,
+      working with Prof. Panayiota Kendeou.
+    </p>
+    <p>
+      My research asks how children learn to read — and read to learn — across print and digital environments.
+    </p>
+  </section>
+
+  <section id="interests">
+    <h2>Research Interests</h2>
+    <ul class="interests">
+      <li><b>Cognitive and emotional foundations of reading development</b> — how skills like theory of mind shape children's reading comprehension.</li>
+      <li><b>Multiple-text comprehension and source evaluation</b> — how children and adolescents judge, select, and integrate information from competing sources.</li>
+      <li><b>Reading and information literacy in the digital age</b> — how adolescents search, evaluate, and make sense of information on the open web.</li>
+    </ul>
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <ul class="edu">
+      <li><span class="when">Oct 2026</span> — Received the <b>Jason Albrecht Outstanding Young Scientist Award</b> from the Society for Text &amp; Discourse.</li>
+      <li><span class="when">Oct 2026</span> — Honored as first recipient of the <b>Second Prize, MOE Outstanding Research Achievement Award in Humanities and Social Sciences</b> (Ministry of Education of China).</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="edu">
+      <li>
+        <div><span class="deg">Ph.D., Educational and School Psychology</span>, Beijing Normal University</div>
+        <div class="note">Advisor: Prof. Xinchun Wu &nbsp;·&nbsp; <span class="when">2023 – 2027 (expected)</span></div>
+      </li>
+      <li>
+        <div><span class="deg">Joint Ph.D. Student (CSC)</span>, Educational Psychology, University of Minnesota</div>
+        <div class="note">Advisor: Prof. Panayiota Kendeou &nbsp;·&nbsp; <span class="when">2025 – 2026</span></div>
+      </li>
+      <li>
+        <div><span class="deg">M.A., Educational and School Psychology</span>, Beijing Normal University</div>
+        <div class="note"><span class="when">2020 – 2023</span></div>
+      </li>
+      <li>
+        <div><span class="deg">B.S., Psychology</span>, East China Normal University</div>
+        <div class="note">National Base of Science Education &nbsp;·&nbsp; <span class="when">2016 – 2020</span></div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <h3 style="font-size:1.02rem; color:var(--muted); margin:0 0 12px;">First-authored publications</h3>
+    <ul class="pubs">
+      <li>
+        <p><span class="fa-mark">*</span>Wang, H., Zhao, Y., Chen, H., Wu, X., Sun, P., &amp; Zhao, Y. (2024). <span class="paper-title">Uncovering the timing and target: The unique longitudinal contribution of theory of mind to reading comprehension across elementary school.</span> <span class="journal">Journal of Educational Psychology, 116</span>(3), 346–362.<a class="doi" href="https://doi.org/10.1037/edu0000854" target="_blank" rel="noopener">[DOI]</a></p>
+      </li>
+      <li>
+        <p><span class="fa-mark">*</span>Wang, H., Chen, H., Zhao, Y., Chen, J., Zhao, Y., &amp; Wu, X. (2025). <span class="paper-title">How does mind reading affect story reading across elementary school? Navigating the cognitive and emotional pathways.</span> <span class="journal">Child Development, 96</span>(6), 1899–1916.<a class="doi" href="https://doi.org/10.1111/cdev.70017" target="_blank" rel="noopener">[DOI]</a></p>
+      </li>
+      <li>
+        <p><span class="fa-mark">*</span>Wang, H., Zhao, Y., Chen, H., Wu, X., Wu, W., Chen, J., Zhao, Y., &amp; Kendeou, P. (2026). <span class="paper-title">A developmental feedback loop: Reciprocal relations between reader beliefs and genre-specific reading comprehension.</span> <span class="journal">Reading and Writing</span>. Advance online publication.<a class="doi" href="https://doi.org/10.1007/s11145-026-10869-3" target="_blank" rel="noopener">[DOI]</a></p>
+      </li>
+      <li>
+        <p><span class="fa-mark">*</span>王淏蘭, 陈红君, 伍新春, 赵英, 孙鹏. (2023). <span class="paper-title">阅读模式对汉语儿童阅读理解的影响：有中介的调节作用.</span> <span class="journal">心理发展与教育, 39</span>(3), 369–378.（人大复印报刊资料《心理学》全文转载）<a class="doi" href="https://scholar.google.com/scholar?q=%E9%98%85%E8%AF%BB%E6%A8%A1%E5%BC%8F%E5%AF%B9%E6%B1%89%E8%AF%AD%E5%84%BF%E7%AB%A5%E9%98%85%E8%AF%BB%E7%90%86%E8%A7%A3%E7%9A%84%E5%BD%B1%E5%93%8D" target="_blank" rel="noopener">[Scholar]</a></p>
+      </li>
+    </ul>
+
+    <h3 style="font-size:1.02rem; color:var(--muted); margin:22px 0 12px;">Co-authored publications</h3>
+    <ul class="pubs">
+      <li>
+        <p>Zhao, Y., Wu, X., Sun, P., Chen, H., &amp; Wang, H. (2025). <span class="paper-title">Dynamic relationships between text reading fluency and reading comprehension across three stages of reading development in Chinese children: A longitudinal cross-lagged study.</span> <span class="journal">Learning and Instruction, 95</span>, 102020.<a class="doi" href="https://doi.org/10.1016/j.learninstruc.2024.102020" target="_blank" rel="noopener">[DOI]</a></p>
+      </li>
+      <li>
+        <p>Chen, H., Zhao, Y., Wang, H., Zhao, Y., &amp; Wu, X. (2026). <span class="paper-title">The long-term effects of home literacy activities on reading strategies: Exploring the mediating roles of reading motivation and reading skills.</span> <span class="journal">Learning and Individual Differences, 129</span>, 102950.<a class="doi" href="https://doi.org/10.1016/j.lindif.2026.102950" target="_blank" rel="noopener">[DOI]</a></p>
+      </li>
+      <li>
+        <p>Chen, H., Zhao, Y., Sun, P., Wang, H., Zhao, Y., &amp; Wu, X. (2025). <span class="paper-title">Contributions of decoding and listening comprehension to reading comprehension at different levels: Exploring the mediating roles of oral and silent reading fluency.</span> <span class="journal">Learning and Individual Differences, 117</span>, 102582.<a class="doi" href="https://doi.org/10.1016/j.lindif.2024.102582" target="_blank" rel="noopener">[DOI]</a></p>
+      </li>
+      <li>
+        <p>赵英, 伍新春, 陈红君, 孙鹏, 王淏蘭. (2024). <span class="paper-title">语素意识与快速命名对汉语儿童阅读能力的影响：跨学段的中介效应分析.</span> <span class="journal">心理学报, 56</span>(1), 70–82.<a class="doi" href="https://scholar.google.com/scholar?q=%E8%AF%AD%E7%B4%A0%E6%84%8F%E8%AF%86%E4%B8%8E%E5%BF%AB%E9%80%9F%E5%91%BD%E5%90%8D%E5%AF%B9%E6%B1%89%E8%AF%AD%E5%84%BF%E7%AB%A5%E9%98%85%E8%AF%BB%E8%83%BD%E5%8A%9B%E7%9A%84%E5%BD%B1%E5%93%8D" target="_blank" rel="noopener">[Scholar]</a></p>
+      </li>
+      <li>
+        <p>Chen, H., Zhao, Y., Wu, X., Sun, P., Feng, J., Xie, R., &amp; Wang, H. (2023). <span class="paper-title">Effects of phonological awareness and morphological awareness on blind students' reading comprehension.</span> <span class="journal">British Journal of Psychology, 114</span>(2), 415–429.<a class="doi" href="https://doi.org/10.1111/bjop.12630" target="_blank" rel="noopener">[DOI]</a></p>
+      </li>
+    </ul>
+    <p class="pub-note">Three additional first-authored manuscripts are currently under review. <span class="fa-mark">*</span> = first author.</p>
+  </section>
+
+  <section id="honors">
+    <h2>Selected Honors</h2>
+    <ul class="honors">
+      <li><b>Jason Albrecht Outstanding Young Scientist Award</b>, Society for Text &amp; Discourse (2026) <span class="honor-note">— at most one recipient per year; first recipient from a mainland Chinese university since the award's establishment in 1997.</span></li>
+      <li><b>Second Prize, Outstanding Research Achievement Award in Humanities and Social Sciences</b>, Ministry of Education of China (2026, first recipient)</li>
+      <li><b>Walter Kintsch Student Travel Award</b>, Society for Text &amp; Discourse (2026)</li>
+      <li><b>China Scholarship Council Joint Ph.D. Scholarship</b> (2025)</li>
+      <li><b>National Scholarship for Doctoral Students</b> (2024)</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2026 Haolan Wang · Last updated: October 2026
+  </footer>
+
+</div>
+</body>
+</html>
